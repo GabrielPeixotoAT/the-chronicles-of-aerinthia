@@ -41,10 +41,10 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Back
+  - name: Sky
     uniqueID: 2426796565
     locked: 0
-  - name: Entity
+  - name: Terrain
     uniqueID: 3814047455
     locked: 0
   - name: Fore
