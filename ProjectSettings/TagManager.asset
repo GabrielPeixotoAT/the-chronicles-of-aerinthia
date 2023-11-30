@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Danger
   layers:
   - Default
   - TransparentFX
@@ -44,9 +45,15 @@ TagManager:
   - name: Sky
     uniqueID: 2426796565
     locked: 0
+  - name: Horizon
+    uniqueID: 2465307235
+    locked: 0
   - name: Terrain
     uniqueID: 3814047455
     locked: 0
-  - name: Fore
+  - name: Entity
     uniqueID: 1789885489
+    locked: 0
+  - name: Fore
+    uniqueID: 4269005103
     locked: 0

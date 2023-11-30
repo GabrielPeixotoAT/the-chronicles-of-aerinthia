@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,10 +113,10 @@ TextureImporter:
       name: desert_background_1_2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 248
-        width: 124
-        height: 124
+        x: 86
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: desert_background_1_2_1
       rect:
         serializedVersion: 2
-        x: 124
-        y: 248
-        width: 124
-        height: 124
+        x: 214
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: desert_background_1_2_2
       rect:
         serializedVersion: 2
-        x: 248
-        y: 248
-        width: 124
-        height: 124
+        x: 342
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: desert_background_1_2_3
       rect:
         serializedVersion: 2
-        x: 372
-        y: 248
-        width: 124
-        height: 124
+        x: 470
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: desert_background_1_2_4
       rect:
         serializedVersion: 2
-        x: 496
-        y: 248
-        width: 124
-        height: 124
+        x: 598
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: desert_background_1_2_5
       rect:
         serializedVersion: 2
-        x: 620
-        y: 248
-        width: 124
-        height: 124
+        x: 726
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: desert_background_1_2_6
       rect:
         serializedVersion: 2
-        x: 744
-        y: 248
-        width: 124
-        height: 124
+        x: 854
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: desert_background_1_2_7
       rect:
         serializedVersion: 2
-        x: 868
-        y: 248
-        width: 124
-        height: 124
+        x: 982
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: desert_background_1_2_8
       rect:
         serializedVersion: 2
-        x: 992
-        y: 248
-        width: 124
-        height: 124
+        x: 1110
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: desert_background_1_2_9
       rect:
         serializedVersion: 2
-        x: 1116
-        y: 248
-        width: 124
-        height: 124
+        x: 1238
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: desert_background_1_2_10
       rect:
         serializedVersion: 2
-        x: 1240
-        y: 248
-        width: 124
-        height: 124
+        x: 86
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: desert_background_1_2_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 124
-        width: 124
-        height: 124
+        x: 214
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: desert_background_1_2_12
       rect:
         serializedVersion: 2
-        x: 124
-        y: 124
-        width: 124
-        height: 124
+        x: 342
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: desert_background_1_2_13
       rect:
         serializedVersion: 2
-        x: 248
-        y: 124
-        width: 124
-        height: 124
+        x: 470
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: desert_background_1_2_14
       rect:
         serializedVersion: 2
-        x: 372
-        y: 124
-        width: 124
-        height: 124
+        x: 598
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: desert_background_1_2_15
       rect:
         serializedVersion: 2
-        x: 496
-        y: 124
-        width: 124
-        height: 124
+        x: 726
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: desert_background_1_2_16
       rect:
         serializedVersion: 2
-        x: 620
-        y: 124
-        width: 124
-        height: 124
+        x: 854
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: desert_background_1_2_17
       rect:
         serializedVersion: 2
-        x: 744
-        y: 124
-        width: 124
-        height: 124
+        x: 982
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +491,10 @@ TextureImporter:
       name: desert_background_1_2_18
       rect:
         serializedVersion: 2
-        x: 868
-        y: 124
-        width: 124
-        height: 124
+        x: 1110
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +512,10 @@ TextureImporter:
       name: desert_background_1_2_19
       rect:
         serializedVersion: 2
-        x: 992
-        y: 124
-        width: 124
-        height: 124
+        x: 1238
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +533,10 @@ TextureImporter:
       name: desert_background_1_2_20
       rect:
         serializedVersion: 2
-        x: 1116
-        y: 124
-        width: 124
-        height: 124
+        x: 86
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +554,10 @@ TextureImporter:
       name: desert_background_1_2_21
       rect:
         serializedVersion: 2
-        x: 1240
-        y: 124
-        width: 124
-        height: 124
+        x: 214
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +575,10 @@ TextureImporter:
       name: desert_background_1_2_22
       rect:
         serializedVersion: 2
-        x: 0
+        x: 342
         y: 0
-        width: 124
-        height: 124
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +596,10 @@ TextureImporter:
       name: desert_background_1_2_23
       rect:
         serializedVersion: 2
-        x: 124
+        x: 470
         y: 0
-        width: 124
-        height: 124
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,10 +617,10 @@ TextureImporter:
       name: desert_background_1_2_24
       rect:
         serializedVersion: 2
-        x: 248
+        x: 598
         y: 0
-        width: 124
-        height: 124
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +638,10 @@ TextureImporter:
       name: desert_background_1_2_25
       rect:
         serializedVersion: 2
-        x: 372
+        x: 726
         y: 0
-        width: 124
-        height: 124
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +659,10 @@ TextureImporter:
       name: desert_background_1_2_26
       rect:
         serializedVersion: 2
-        x: 496
+        x: 854
         y: 0
-        width: 124
-        height: 124
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,10 +680,10 @@ TextureImporter:
       name: desert_background_1_2_27
       rect:
         serializedVersion: 2
-        x: 620
+        x: 982
         y: 0
-        width: 124
-        height: 124
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,10 +701,10 @@ TextureImporter:
       name: desert_background_1_2_28
       rect:
         serializedVersion: 2
-        x: 744
+        x: 1110
         y: 0
-        width: 124
-        height: 124
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,10 +722,10 @@ TextureImporter:
       name: desert_background_1_2_29
       rect:
         serializedVersion: 2
-        x: 868
+        x: 1238
         y: 0
-        width: 124
-        height: 124
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -735,69 +735,6 @@ TextureImporter:
       bones: []
       spriteID: 7d98b6b0164ad0743b564f8bd983a3f8
       internalID: 2059008864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: desert_background_1_2_30
-      rect:
-        serializedVersion: 2
-        x: 992
-        y: 0
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e712971ce191d946b699ac6d44ea107
-      internalID: -1888093263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: desert_background_1_2_31
-      rect:
-        serializedVersion: 2
-        x: 1116
-        y: 0
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7422d0f670eec6449879384dd20ae5f8
-      internalID: 292264204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: desert_background_1_2_32
-      rect:
-        serializedVersion: 2
-        x: 1240
-        y: 0
-        width: 124
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bf68c5d631105d4a936b5e9e395a3b6
-      internalID: 29859951
       vertices: []
       indices: 
       edges: []
@@ -837,9 +774,6 @@ TextureImporter:
       desert_background_1_2_28: 206663395
       desert_background_1_2_29: 2059008864
       desert_background_1_2_3: 2013188479
-      desert_background_1_2_30: -1888093263
-      desert_background_1_2_31: 292264204
-      desert_background_1_2_32: 29859951
       desert_background_1_2_4: 952937817
       desert_background_1_2_5: -1822132461
       desert_background_1_2_6: 1429988838
