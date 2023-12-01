@@ -18,7 +18,7 @@ public class PlayerEntity : Entity
         controller = GetComponent<PlayerController>();
 
         lifesList = new List<GameObject>();
-        for (int i = 1; i < Lifes; i++)
+        for (int i = 0; i < Lifes; i++)
         {
             if (LifesGrid && LifeObject)
                 lifesList.Add(Instantiate(LifeObject, LifesGrid.transform));
@@ -30,8 +30,9 @@ public class PlayerEntity : Entity
         if (Lifes > 1)
         {
             Lifes--;
+            Destroy(lifesList.Last());
+            lifesList.Remove(lifesList.Last());
             controller.TriggerHitAnimation();
-            Destroy(lifesList.First());
         }
         else
         {
@@ -42,7 +43,6 @@ public class PlayerEntity : Entity
     public void Kill()
     {
         Lifes = 0;
-        ClearLifes();
         Die();
     }
 
@@ -56,6 +56,7 @@ public class PlayerEntity : Entity
     private void Die()
     {
         GameOver();
+        ClearLifes();
         Destroy(gameObject);
     }
 
