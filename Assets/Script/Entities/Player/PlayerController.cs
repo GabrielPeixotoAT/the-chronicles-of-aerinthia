@@ -8,15 +8,11 @@ public class PlayerController : Movement
     public LayerMask GroundLayer;
 
     private Rigidbody2D rigidbody2d;
-    private Collider2D collider2d;
     private Animator animator;
-
-    public float InputView;
 
     void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-        collider2d = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -48,8 +44,6 @@ public class PlayerController : Movement
     {
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
 
-        InputView = horizontalMovement;
-
         if (horizontalMovement != 0)
         {
             rigidbody2d.velocity = new Vector2(horizontalMovement * MovementSpeed, rigidbody2d.velocity.y);
@@ -73,5 +67,10 @@ public class PlayerController : Movement
         animator.SetBool("Runnig", false);
 
         animator.SetTrigger("Jump");
+    }
+
+    public void TriggerHitAnimation()
+    {
+        animator.SetTrigger("TakeHit");
     }
 }
