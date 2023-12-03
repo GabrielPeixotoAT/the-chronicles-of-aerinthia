@@ -505,7 +505,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Chronicles of Aerinthia\nVers\xE3o: 0.1.1"
+  m_text: "The Chronicles of Aerinthia\nVers\xE3o: 0.1.2"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b33a248bf5aca2147a80f07361cc5af3, type: 2}
   m_sharedMaterial: {fileID: -4867341418998882013, guid: b33a248bf5aca2147a80f07361cc5af3, type: 2}
@@ -2228,6 +2228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0838ad79e92f942a398c16fca1cc48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sliderVolume: {fileID: 1341362078}
 --- !u!1 &1023342369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2709,6 +2710,7 @@ GameObject:
   - component: {fileID: 1273953276}
   - component: {fileID: 1273953275}
   - component: {fileID: 1273953278}
+  - component: {fileID: 1273953279}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2886,6 +2888,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1273953279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273953274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe8d4a0f2f948d4595e3c775b6d1bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1341362076
 GameObject:
   m_ObjectHideFlags: 0

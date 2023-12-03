@@ -62,7 +62,7 @@ public class PlayerEntity : Entity
 
     private void GameOver()
     {
-        if (GameOverMenu)
-            Instantiate(GameOverMenu);
+        GameOverMenu.SetActive(true);
+        AudioListener.volume = 0;
     }
 }

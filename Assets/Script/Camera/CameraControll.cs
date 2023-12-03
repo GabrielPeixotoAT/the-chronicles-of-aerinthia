@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class CameraControll : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
 
     void Awake()
     {
         var targetObj = GameObject.FindGameObjectsWithTag("Player");
 
-        if (targetObj != null )
+        if (targetObj.Length > 0)
             target = targetObj.First().transform;
+
+        AudioListener.volume = GameMenager.Volume;
     }
 
     void LateUpdate()
