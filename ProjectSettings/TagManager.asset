@@ -51,6 +51,9 @@ TagManager:
   - name: Terrain
     uniqueID: 3814047455
     locked: 0
+  - name: Building
+    uniqueID: 421332187
+    locked: 0
   - name: Entity
     uniqueID: 1789885489
     locked: 0
