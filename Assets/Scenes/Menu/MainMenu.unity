@@ -505,7 +505,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Chronicles of Aerinthia\nVers\xE3o: 0.1.2"
+  m_text: "The Chronicles of Aerinthia\nVers\xE3o: 0.1.4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b33a248bf5aca2147a80f07361cc5af3, type: 2}
   m_sharedMaterial: {fileID: -4867341418998882013, guid: b33a248bf5aca2147a80f07361cc5af3, type: 2}
