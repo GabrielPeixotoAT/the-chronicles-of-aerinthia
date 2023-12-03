@@ -48,6 +48,24 @@ public class PlayerEntity : Entity
         Die();
     }
 
+    public void RestoreLifes()
+    {
+        Lifes = 3;
+        GameMenager.PlayerLifes = 3;
+
+        ClearLifes();
+        FillLifes();
+    }
+
+    private void FillLifes()
+    {
+        for (int i = 0; i < Lifes; i++)
+        {
+            if (LifesGrid && LifeObject)
+                lifesList.Add(Instantiate(LifeObject, LifesGrid.transform));
+        }
+    }
+
     private void ClearLifes()
     {
         if (lifesList.Any())

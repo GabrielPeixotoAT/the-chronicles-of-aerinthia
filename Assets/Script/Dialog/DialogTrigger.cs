@@ -4,11 +4,26 @@ using UnityEngine;
 
 public class DialogTrigger : MonoBehaviour
 {
-    public GameObject DialogPrefab;
+    public GameObject DialogMenu;
+
+    private bool trigger;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(GameInfo.PlayerTag))
-            DialogPrefab.SetActive(true);
+        if (!trigger)
+            if (collision.gameObject.CompareTag(GameInfo.PlayerTag))
+            {
+                DialogMenu.SetActive(true);
+
+                var playerController = collision.gameObject.GetComponent<PlayerController>();
+
+                if (playerController != null)
+                {
+                    playerController.Stop();
+                    playerController.enabled = false;
+                }
+
+               trigger = true;
+            }
     }
 }

@@ -40,6 +40,12 @@ public class PlayerController : Movement
         return Physics2D.OverlapCircle(GroundCheck.position, 0.2f, GroundLayer);
     }
 
+    public void Stop()
+    {
+        rigidbody2d.velocity = Vector2.zero;
+        animator.SetBool("Runnig", false);
+    }
+
     public void Move()
     {
         float horizontalMovement = Input.GetAxisRaw("Horizontal");

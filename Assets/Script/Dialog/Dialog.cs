@@ -8,4 +8,5 @@ public class Dialog : MonoBehaviour
     [TextArea(2, 6)]
     public string Message;
     public bool IsQuestion;
+    public string Answer;
 }

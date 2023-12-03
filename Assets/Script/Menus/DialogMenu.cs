@@ -21,7 +21,12 @@ public class DialogMenu : MonoBehaviour
     [Header("Content")]
     public List<Dialog> Dialogs;
 
+    [Header("Response Menus")]
+    public GameObject CorrectMenu;
+    public GameObject WrongMenu;
+
     private GameObject player;
+    private Dialog currentDialog;
 
     private void Awake()
     {
@@ -36,7 +41,7 @@ public class DialogMenu : MonoBehaviour
 
     public void NextMessage()
     {
-        var currentDialog = Dialogs.FirstOrDefault();
+        currentDialog = Dialogs.FirstOrDefault();
 
         if (currentDialog.IsQuestion)
             QuestionConfig();
@@ -49,11 +54,34 @@ public class DialogMenu : MonoBehaviour
         Dialogs.Remove(currentDialog);
     }
 
+    public void ConfirmResponse()
+    {
+        if (!string.IsNullOrEmpty(Response.text))
+        {
+            if (currentDialog.Answer == Response.text)
+                CorrectAnswer();
+            else
+                WrongAnswer();
+
+            gameObject.SetActive(false);
+        }   
+    }
+
+    private void CorrectAnswer()
+    {
+        CorrectMenu.SetActive(true);
+    }
+
+    private void WrongAnswer()
+    {
+        WrongMenu.SetActive(true);
+    }
+
     private void QuestionConfig()
     {
         OkButton.gameObject.SetActive(false);
         ConfirmButton.gameObject.SetActive(true);
-        CancelButton.gameObject.SetActive(true);
+        //CancelButton.gameObject.SetActive(true);
 
         Response.gameObject.SetActive(true);
     }
