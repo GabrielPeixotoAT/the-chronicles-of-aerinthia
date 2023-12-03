@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [Header("Menus")]
+    public GameObject SettingsMenu;
+
     public void ContinueGame()
     {
 
@@ -17,7 +20,7 @@ public class MainMenu : MonoBehaviour
 
     public void SttingsMenu()
     {
-
+       SettingsMenu.SetActive(true);
     }
 
     public void ExitGame()
