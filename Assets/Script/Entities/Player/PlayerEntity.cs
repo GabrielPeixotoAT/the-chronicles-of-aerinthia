@@ -17,6 +17,8 @@ public class PlayerEntity : Entity
     {
         controller = GetComponent<PlayerController>();
 
+        Lifes = GameMenager.PlayerLifes;
+
         lifesList = new List<GameObject>();
         for (int i = 0; i < Lifes; i++)
         {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Dialog : MonoBehaviour
 {
     public string Title;
-    [TextArea(2, 5)]
+    [TextArea(2, 6)]
     public string Message;
     public bool IsQuestion;
 }
