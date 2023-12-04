@@ -45,6 +45,9 @@ TagManager:
   - name: Sky
     uniqueID: 2426796565
     locked: 0
+  - name: Sun
+    uniqueID: 3867104315
+    locked: 0
   - name: Horizon
     uniqueID: 2465307235
     locked: 0
