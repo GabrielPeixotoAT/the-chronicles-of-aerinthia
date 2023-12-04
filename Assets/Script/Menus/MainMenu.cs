@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
     void Awake()
     {
         StatusLabel.text = "The Chronicles of Aerinthia\n" +
-            $"Versão: {PlayerSettings.bundleVersion}";
+            $"Versão: {GameInfo.Version}";
     }
 
     public void ContinueGame()
