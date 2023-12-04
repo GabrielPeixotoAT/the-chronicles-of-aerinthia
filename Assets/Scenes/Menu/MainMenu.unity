@@ -903,6 +903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3573d6116e35b7a4182826c13d272578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StatusLabel: {fileID: 272776800}
   SettingsMenu: {fileID: 0}
 --- !u!114 &364347651
 MonoBehaviour:
