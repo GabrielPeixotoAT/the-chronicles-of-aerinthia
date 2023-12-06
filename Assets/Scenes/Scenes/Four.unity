@@ -32140,55 +32140,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenu: {fileID: 7458405132195467542, guid: 7562e5cecacabb74da151e53fcef7c00, type: 3}
---- !u!1 &1763558741
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1763558742}
-  - component: {fileID: 1763558743}
-  m_Layer: 0
-  m_Name: Comercio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1763558742
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763558741}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1849119270}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1763558743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763558741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89273bf397d1f0446b698d1d68268ec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Title: Comerciante
-  Message: "O \xFAltimo comprador pagou 32 moedas, e pegou 2 vezes mais suprimentos
-    que voc\xEA.\n{2X = 32}\nQual o valor dos seus suprimentos?"
-  IsQuestion: 1
-  Answer: 16
 --- !u!1001 &1806248093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32539,8 +32490,7 @@ Transform:
   m_LocalPosition: {x: 946.2923, y: 512.27966, z: 2.4076436}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1763558742}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1935153124
@@ -32905,8 +32855,7 @@ MonoBehaviour:
   OkButton: {fileID: 622722227}
   ConfirmButton: {fileID: 1820830088}
   CancelButton: {fileID: 263863698}
-  Dialogs:
-  - {fileID: 1763558743}
+  Dialogs: []
   CorrectMenu: {fileID: 280864345}
   WrongMenu: {fileID: 370321715}
 --- !u!114 &2129221250
