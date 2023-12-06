@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour
     {
         StatusLabel.text = "The Chronicles of Aerinthia\n" +
             $"Versão: {GameInfo.Version}";
+        DialogManager.LoadDialogs();
     }
 
     public void ContinueGame()

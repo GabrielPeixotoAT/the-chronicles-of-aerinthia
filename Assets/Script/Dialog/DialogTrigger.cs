@@ -13,6 +13,13 @@ public class DialogTrigger : MonoBehaviour
         if (!trigger)
             if (collision.gameObject.CompareTag(GameInfo.PlayerTag))
             {
+                var dialogComponent = DialogMenu.GetComponent<DialogMenu>();
+
+                if (dialogComponent != null)
+                {
+                    dialogComponent.SetNextDialog(DialogManager.NextDialog());
+                }
+
                 DialogMenu.SetActive(true);
 
                 var playerController = collision.gameObject.GetComponent<PlayerController>();

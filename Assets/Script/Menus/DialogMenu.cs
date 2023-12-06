@@ -39,6 +39,11 @@ public class DialogMenu : MonoBehaviour
         NextMessage();
     }
 
+    public void SetNextDialog(Dialog dialog)
+    {
+        Dialogs.Add(dialog);
+    }
+
     public void NextMessage()
     {
         currentDialog = Dialogs.FirstOrDefault();
