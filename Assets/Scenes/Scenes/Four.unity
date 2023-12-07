@@ -9614,9 +9614,17 @@ PrefabInstance:
       propertyPath: GameOverMenu
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3872805828527952842, guid: a5328b6877abcb047bc8f78ee1b14811, type: 3}
+      propertyPath: LifesGrid
+      value: 
+      objectReference: {fileID: 847897520}
     - target: {fileID: 4447674069729669838, guid: a5328b6877abcb047bc8f78ee1b14811, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6088579692981680339, guid: a5328b6877abcb047bc8f78ee1b14811, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.264
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28208,7 +28216,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2022734634}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -28220,7 +28228,7 @@ MonoBehaviour:
           m_StringArgument: Two
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2022734633}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerEntity, Assembly-CSharp
         m_MethodName: RestoreLifes
         m_Mode: 1
@@ -32576,7 +32584,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2022734634}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -32638,28 +32646,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935153124}
   m_CullTransparentMesh: 1
---- !u!114 &2022734633 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2286097721070216435, guid: a5328b6877abcb047bc8f78ee1b14811, type: 3}
-  m_PrefabInstance: {fileID: 434733938}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a4ef0d6ac20caa4eaa61f9d6910a48e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2022734634 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 441209370417384146, guid: a5328b6877abcb047bc8f78ee1b14811, type: 3}
-  m_PrefabInstance: {fileID: 434733938}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09d04e126587f441b1858dea6c6ccf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2073419784
 GameObject:
   m_ObjectHideFlags: 0
