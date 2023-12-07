@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class PlayerController : Movement
 {
+    public float AttackRange;
+    public float AttackSpeed;
+
     public Transform GroundCheck;
     public LayerMask GroundLayer;
+    public LayerMask EnemyLayer;
+
+    private float waitAttack;
 
     private Rigidbody2D rigidbody2d;
     private Animator animator;
@@ -24,14 +30,22 @@ public class PlayerController : Movement
         {
             animator.SetBool("IsGrounded", isGrounded);
 
-            Move();
-
-            if (isGrounded && (Input.GetKeyDown(KeyCode.UpArrow) ||
-                Input.GetKeyDown(KeyCode.Space) ||
-                Input.GetKeyDown(KeyCode.W)))
+            if (waitAttack <= Time.time)
             {
-                Jump();
-            }
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                     Attack();
+                }
+                else
+                {
+                    Move();
+                }
+
+                if (isGrounded && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)))
+                {
+                    Jump();
+                }
+            }   
         }
     }
 
@@ -73,6 +87,22 @@ public class PlayerController : Movement
         animator.SetBool("Runnig", false);
 
         animator.SetTrigger("Jump");
+    }
+
+    private void Attack()
+    {
+        waitAttack = Time.time + AttackSpeed;
+        animator.SetTrigger("Attack");
+
+        Vector2 directionRay = new Vector2(transform.localScale.x, 0);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, directionRay, AttackRange, EnemyLayer);
+
+        if (hit.collider != null)
+        {
+            var enemyController = hit.collider.gameObject.GetComponent<EnemyController>();
+
+            enemyController.Die();
+        }
     }
 
     public void TriggerHitAnimation()
