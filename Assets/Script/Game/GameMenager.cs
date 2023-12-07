@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameMenager : MonoBehaviour
 {
-    public static float Volume = 1;
+    public static float Volume = 0.5f;
     public static int PlayerLifes = 3;
     public static bool IsPaused;
 

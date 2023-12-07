@@ -28,7 +28,7 @@ public class DialogManager
         }
     }
     
-    public static Dialog NextDialog()
+    public static DialogData NextDialog()
     {
         int choose = 0;
 
@@ -41,15 +41,7 @@ public class DialogManager
 
         DialogsBase.DialogsList.Remove(DialogsBase.DialogsList[choose]);
 
-        var dialog = new Dialog
-        {
-            Title = dialogData.Title,
-            Message = dialogData.Message,
-            IsQuestion = dialogData.IsQuestion,
-            Answer = dialogData.Answer,
-        };
-
-        return dialog;
+        return dialogData;
     }
 
     public static void CreateFile()

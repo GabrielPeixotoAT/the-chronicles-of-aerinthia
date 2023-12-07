@@ -19,14 +19,14 @@ public class DialogMenu : MonoBehaviour
     public Button CancelButton;
 
     [Header("Content")]
-    public List<Dialog> Dialogs;
+    public List<DialogData> Dialogs;
 
     [Header("Response Menus")]
     public GameObject CorrectMenu;
     public GameObject WrongMenu;
 
     private GameObject player;
-    private Dialog currentDialog;
+    private DialogData currentDialog;
 
     private void Awake()
     {
@@ -39,7 +39,7 @@ public class DialogMenu : MonoBehaviour
         NextMessage();
     }
 
-    public void SetNextDialog(Dialog dialog)
+    public void SetNextDialog(DialogData dialog)
     {
         Dialogs.Add(dialog);
     }

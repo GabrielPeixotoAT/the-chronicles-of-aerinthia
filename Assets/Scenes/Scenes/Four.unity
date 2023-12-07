@@ -9631,6 +9631,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5328b6877abcb047bc8f78ee1b14811, type: 3}
+--- !u!114 &434733939 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3872805828527952842, guid: a5328b6877abcb047bc8f78ee1b14811, type: 3}
+  m_PrefabInstance: {fileID: 434733938}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4ef0d6ac20caa4eaa61f9d6910a48e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &434733940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7111281831330119348, guid: a5328b6877abcb047bc8f78ee1b14811, type: 3}
+  m_PrefabInstance: {fileID: 434733938}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09d04e126587f441b1858dea6c6ccf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &509322845
 GameObject:
   m_ObjectHideFlags: 0
@@ -28216,7 +28238,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 434733940}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -28228,9 +28250,9 @@ MonoBehaviour:
           m_StringArgument: Two
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 434733939}
         m_TargetAssemblyTypeName: PlayerEntity, Assembly-CSharp
-        m_MethodName: RestoreLifes
+        m_MethodName: RestoreOneLife
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32470,37 +32492,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820830085}
   m_CullTransparentMesh: 1
---- !u!1 &1849119269
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1849119270}
-  m_Layer: 0
-  m_Name: Dialogs
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1849119270
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849119269}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 946.2923, y: 512.27966, z: 2.4076436}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1935153124
 GameObject:
   m_ObjectHideFlags: 0
@@ -32584,7 +32575,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 434733940}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -32891,5 +32882,4 @@ SceneRoots:
   - {fileID: 1402476566}
   - {fileID: 1569738626}
   - {fileID: 1515830069}
-  - {fileID: 1849119270}
   - {fileID: 146678131}

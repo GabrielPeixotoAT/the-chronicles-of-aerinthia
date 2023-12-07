@@ -12916,38 +12916,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e628578b26dc3254db818084668a88ea, type: 3}
---- !u!1 &690271920
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 690271921}
-  m_Layer: 0
-  m_Name: Dialogs
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &690271921
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690271920}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 946.2923, y: 512.27966, z: 2.4076436}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 795336493}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &720680078
 GameObject:
   m_ObjectHideFlags: 0
@@ -13349,55 +13317,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767694166}
   m_CullTransparentMesh: 1
---- !u!1 &795336492
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 795336493}
-  - component: {fileID: 795336494}
-  m_Layer: 0
-  m_Name: Dungeon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &795336493
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795336492}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 690271921}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &795336494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795336492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89273bf397d1f0446b698d1d68268ec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Title: "Regi\xE3o de cavernas"
-  Message: "Leo agora ter\xE1 que passar por uma regi\xE3o cheia de cavernas e se
-    pergunta quais perigos ele pode encontrar por l\xE1."
-  IsQuestion: 0
-  Answer: 
 --- !u!1 &859738307
 GameObject:
   m_ObjectHideFlags: 0
@@ -17891,7 +17810,11 @@ MonoBehaviour:
   ConfirmButton: {fileID: 9054693431412334083}
   CancelButton: {fileID: 1411473465244404636}
   Dialogs:
-  - {fileID: 795336494}
+  - Title: "Regi\xE3o de cavernas"
+    Message: "Leo agora ter\xE1 que passar por uma regi\xE3o cheia de cavernas e
+      se pergunta quais perigos ele pode encontrar por l\xE1."
+    IsQuestion: 0
+    Answer: 
   CorrectMenu: {fileID: 0}
   WrongMenu: {fileID: 0}
 --- !u!224 &5142536110288232275
@@ -55528,7 +55451,6 @@ SceneRoots:
   - {fileID: 7358716267425241168}
   - {fileID: 411068639}
   - {fileID: 2043204529}
-  - {fileID: 690271921}
   - {fileID: 480370189}
   - {fileID: 328309566}
   - {fileID: 1190265423}

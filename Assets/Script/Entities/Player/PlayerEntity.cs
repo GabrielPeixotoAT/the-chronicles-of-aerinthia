@@ -48,11 +48,27 @@ public class PlayerEntity : Entity
         Die();
     }
 
+    public void RestoreOneLife()
+    {
+        if (Lifes < MaxLifes)
+        {
+            Lifes++;
+            GameMenager.PlayerLifes = Lifes;
+
+            ResetLifesGrid();
+        }
+    }
+
     public void RestoreLifes()
     {
         Lifes = 3;
         GameMenager.PlayerLifes = 3;
 
+        ResetLifesGrid();
+    }
+
+    private void ResetLifesGrid()
+    {
         ClearLifes();
         FillLifes();
     }
