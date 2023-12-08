@@ -13,9 +13,11 @@ public class SunMove : MonoBehaviour
 
     void Update()
     {
-        Vector2 newPosition = transform.position;
-        newPosition.x = player.transform.position.x - 3;
-        transform.position = newPosition;
+        if (player != null)
+        {
+            Vector2 newPosition = transform.position;
+            newPosition.x = player.transform.position.x - 3;
+            transform.position = newPosition;
+        }
     }
-
 }

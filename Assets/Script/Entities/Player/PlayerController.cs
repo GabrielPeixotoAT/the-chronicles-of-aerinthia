@@ -102,7 +102,7 @@ public class PlayerController : Movement
         {
             var enemyController = hit.collider.gameObject.GetComponent<EnemyController>();
 
-            enemyController.Die();
+            enemyController.TakeDamage();
         }
     }
 

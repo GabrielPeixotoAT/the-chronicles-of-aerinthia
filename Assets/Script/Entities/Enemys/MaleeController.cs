@@ -8,6 +8,7 @@ public class MaleeController : Movement, EnemyController
     public float AttackDistance = 1;
     public float AttackSpeed = 1;
     public float FirstHitLate = 1;
+    public int Lifes = 1;
 
     private bool isAttacking = false;
     private float waitAttack = 0;
@@ -96,6 +97,18 @@ public class MaleeController : Movement, EnemyController
     {
         isAttacking = false;
         animator.SetBool("Attacking", false);
+    }
+
+    public void TakeDamage()
+    {
+        if (Lifes > 1)
+        {
+            Lifes--;
+        }
+        else
+        {
+            Die();
+        }
     }
 
     public void Die()
