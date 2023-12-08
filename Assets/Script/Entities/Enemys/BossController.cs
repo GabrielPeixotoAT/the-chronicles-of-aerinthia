@@ -54,8 +54,11 @@ public class BossController : Movement, EnemyController
         }
         else
         {
-            StopMovement();
-            StopAttack();
+            if (!isDead)
+            {
+                StopMovement();
+                StopAttack();
+            }
         }
     }
 
@@ -65,9 +68,9 @@ public class BossController : Movement, EnemyController
         rigidbody.velocity = new Vector2(MovementSpeed * direction.x, rigidbody.velocity.y);
 
         if (direction.x > 0)
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
         else
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x) * -1, transform.localScale.y);
 
         animator.SetBool("Walking", true);
     }
@@ -104,6 +107,7 @@ public class BossController : Movement, EnemyController
         if (Lifes > 1)
         {
             Lifes--;
+            Debug.Log($"Hited. Life: {Lifes}");
         }
         else
         {
@@ -117,6 +121,6 @@ public class BossController : Movement, EnemyController
         Destroy(gameObject, 3);
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         GetComponent<CapsuleCollider2D>().enabled = false;
-        GetComponent<MaleeController>().enabled = false;
+        GetComponent<BossController>().enabled = false;
     }
 }

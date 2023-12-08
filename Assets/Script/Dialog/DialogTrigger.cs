@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogTrigger : MonoBehaviour
 {
@@ -13,11 +14,14 @@ public class DialogTrigger : MonoBehaviour
         if (!trigger)
             if (collision.gameObject.CompareTag(GameInfo.PlayerTag))
             {
-                var dialogComponent = DialogMenu.GetComponent<DialogMenu>();
-
-                if (dialogComponent != null)
+                if (SceneManager.GetActiveScene().name != GameInfo.LastSceneName)
                 {
-                    dialogComponent.SetNextDialog(DialogManager.NextDialog());
+                    var dialogComponent = DialogMenu.GetComponent<DialogMenu>();
+
+                    if (dialogComponent != null)
+                    {
+                        dialogComponent.SetNextDialog(DialogManager.NextDialog());
+                    }
                 }
 
                 DialogMenu.SetActive(true);

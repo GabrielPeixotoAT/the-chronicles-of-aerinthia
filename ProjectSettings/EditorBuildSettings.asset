@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenes/Four.unity
     guid: e0782574ccc6f094a90db2add9c05db0
+  - enabled: 1
+    path: Assets/Scenes/Scenes/Five.unity
+    guid: d759d2d0858bab441a2171b652206f40
+  - enabled: 1
+    path: Assets/Scenes/Menu/EndGame.unity
+    guid: 8bb0d126fe738534f8bd9bbcc4a94156
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
