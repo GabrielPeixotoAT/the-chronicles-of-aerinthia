@@ -61,7 +61,7 @@ public class MaleeController : Movement, EnemyController
     void Move()
     {
         Vector2 direction = (player.transform.position - transform.position).normalized;
-        rigidbody.velocity = new Vector2(MovementSpeed, rigidbody.velocity.y) * direction;
+        rigidbody.velocity = new Vector2(MovementSpeed * direction.x, rigidbody.velocity.y);
 
         if (direction.x > 0)
             transform.localScale = new Vector2(1, 1);

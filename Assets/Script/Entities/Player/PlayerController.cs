@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerController : Movement
@@ -96,7 +97,7 @@ public class PlayerController : Movement
 
         Vector2 directionRay = new Vector2(transform.localScale.x, 0);
         RaycastHit2D hit = Physics2D.Raycast(transform.position, directionRay, AttackRange, EnemyLayer);
-
+        
         if (hit.collider != null)
         {
             var enemyController = hit.collider.gameObject.GetComponent<EnemyController>();

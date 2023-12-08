@@ -218,7 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 3.5
   JumpForce: 5.2
-  AttackRange: 1.7
+  AttackRange: 1.5
   AttackSpeed: 0.7
   GroundCheck: {fileID: 7366969207827960504}
   GroundLayer:
@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lifes: 3
+  MaxLifes: 5
   GameOverMenu: {fileID: 0}
   LifesGrid: {fileID: 0}
   LifeObject: {fileID: 5166895035654435254, guid: 6949c990de4d2c14b9d7cdbda74d9a83, type: 3}
